@@ -1,3 +1,14 @@
+# Corrected import candidate — October 17, 2026
+
+Use these separate raw links in Pocket GM 3:
+
+- Players: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMRoster_2026_Corrected.json
+- Staff: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMStaff_2026_Corrected.json
+
+209 player records and 58 staff ages corrected. Both files pass structural checks; import, save/reload and multi-season simulation are still untested. See Correction_Status.md for remaining verification, and Phone_Test_Checklist.md for testing steps. This remains the October 7 transaction snapshot, not a live roster. The original file remains available below.
+
+---
+
 # Pocket GM 3 — 2026 NFL import candidate
 
 Target: Pocket GM 3: Football Sim 1.6.2. Built October 11, 2026 from an October 7, 2026 NFL roster snapshot and Madden 27 launch ratings.

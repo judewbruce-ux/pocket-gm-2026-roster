@@ -1,0 +1,831 @@
+{
+  "players": {
+    "records": 2731,
+    "errors": [],
+    "warnings": []
+  },
+  "staff": {
+    "records": 443,
+    "errors": [],
+    "warnings": [
+      "staff row 11 Jeff Ulbrich: source-convention potential 100 exceeds 99; game behavior unverified",
+      "staff row 27 Joe Brady: source-convention potential 100 exceeds 99; game behavior unverified",
+      "staff row 57 Darrin Simmons: source-convention potential 104 exceeds 99; game behavior unverified",
+      "staff row 81 Sean Payton: source-convention potential 101 exceeds 99; game behavior unverified",
+      "staff row 110 Matt Burke: source-convention potential 101 exceeds 99; game behavior unverified",
+      "staff row 111 Frank Ross: source-convention potential 100 exceeds 99; game behavior unverified",
+      "staff row 118 Jim Bob Cooter: source-convention potential 104 exceeds 99; game behavior unverified",
+      "staff row 162 Klint Kubiak: source-convention potential 109 exceeds 99; game behavior unverified",
+      "staff row 169 Alan Woodbury: source-convention potential 104 exceeds 99; game behavior unverified",
+      "staff row 182 Brian Flores: source-convention potential 106 exceeds 99; game behavior unverified",
+      "staff row 190 Josh McDaniels: source-convention potential 102 exceeds 99; game behavior unverified",
+      "staff row 191 Zak Kuhr: source-convention potential 106 exceeds 99; game behavior unverified",
+      "staff row 210 Chris Horton: source-convention potential 100 exceeds 99; game behavior unverified",
+      "staff row 227 Vic Fangio: source-convention potential 101 exceeds 99; game behavior unverified",
+      "staff row 239 Joshua Nelson: source-convention potential 101 exceeds 99; game behavior unverified",
+      "staff row 273 John Fassel: source-convention potential 105 exceeds 99; game behavior unverified",
+      "staff row 358 Scott Tillinghast: source-convention potential 101 exceeds 99; game behavior unverified",
+      "staff row 362 Amir Jessop: source-convention potential 100 exceeds 99; game behavior unverified",
+      "staff row 413 William Cadwallader: source-convention potential 102 exceeds 99; game behavior unverified",
+      "staff row 414 Cameron Harrison: source-convention potential 108 exceeds 99; game behavior unverified",
+      "staff row 420 Adrian Quintero: source-convention potential 110 exceeds 99; game behavior unverified",
+      "staff row 424 Andy Turner: source-convention potential 108 exceeds 99; game behavior unverified"
+    ]
+  },
+  "player_sanity": {
+    "status": "PASS_STRUCTURAL_CHECKS",
+    "players": 2731,
+    "errors": [],
+    "warnings": [
+      "36 draftNum values exceed official template sentinel 224: draft display requires in-game check",
+      "CIN: only 1 OLB; suggested minimum 2",
+      "NYG: only 1 DE; suggested minimum 2",
+      "PHI: only 1 DE; suggested minimum 2",
+      "SF: unusual roster size 71",
+      "5 duplicate names need identity review (not necessarily duplicate players)"
+    ],
+    "duplicate_names": {
+      "justin jefferson": [
+        [
+          "MIN",
+          "WR",
+          27
+        ],
+        [
+          "CLE",
+          "OLB",
+          23
+        ]
+      ],
+      "jaylon jones": [
+        [
+          "TEN",
+          "CB",
+          24
+        ],
+        [
+          "JAX",
+          "CB",
+          28
+        ]
+      ],
+      "byron young": [
+        [
+          "PHI",
+          "DT",
+          25
+        ],
+        [
+          "LAR",
+          "OLB",
+          28
+        ]
+      ],
+      "marcus harris": [
+        [
+          "Free Agent",
+          "DT",
+          25
+        ],
+        [
+          "TEN",
+          "CB",
+          25
+        ]
+      ],
+      "anthony smith": [
+        [
+          "Free Agent",
+          "WR",
+          24
+        ],
+        [
+          "Rookie",
+          "DT",
+          22
+        ]
+      ]
+    },
+    "team_summary": {
+      "ARI": {
+        "players": 63,
+        "positions": {
+          "C": 2,
+          "CB": 7,
+          "DE": 5,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 3,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 6,
+          "TE": 6,
+          "WR": 7
+        },
+        "annual_salary_sum": 141262740,
+        "guarantee_sum": 32718912
+      },
+      "ATL": {
+        "players": 64,
+        "positions": {
+          "C": 2,
+          "CB": 8,
+          "DE": 6,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 3,
+          "OLB": 6,
+          "OT": 6,
+          "P": 1,
+          "QB": 4,
+          "RB": 3,
+          "S": 5,
+          "TE": 4,
+          "WR": 6
+        },
+        "annual_salary_sum": 161376440,
+        "guarantee_sum": 48255688
+      },
+      "BAL": {
+        "players": 59,
+        "positions": {
+          "C": 3,
+          "CB": 8,
+          "DE": 4,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 2,
+          "OT": 3,
+          "P": 1,
+          "QB": 4,
+          "RB": 4,
+          "S": 5,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 171494408,
+        "guarantee_sum": 48505553
+      },
+      "BUF": {
+        "players": 57,
+        "positions": {
+          "C": 3,
+          "CB": 6,
+          "DE": 3,
+          "DT": 6,
+          "K": 1,
+          "MLB": 3,
+          "OG": 3,
+          "OLB": 6,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 3,
+          "S": 5,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 178888548,
+        "guarantee_sum": 41111396
+      },
+      "CAR": {
+        "players": 66,
+        "positions": {
+          "C": 3,
+          "CB": 6,
+          "DE": 5,
+          "DT": 5,
+          "K": 1,
+          "MLB": 5,
+          "OG": 4,
+          "OLB": 3,
+          "OT": 7,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 8
+        },
+        "annual_salary_sum": 167066448,
+        "guarantee_sum": 52933508
+      },
+      "CHI": {
+        "players": 67,
+        "positions": {
+          "C": 2,
+          "CB": 8,
+          "DE": 8,
+          "DT": 5,
+          "K": 1,
+          "MLB": 2,
+          "OG": 4,
+          "OLB": 8,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 4,
+          "S": 6,
+          "TE": 5,
+          "WR": 6
+        },
+        "annual_salary_sum": 161434819,
+        "guarantee_sum": 58565128
+      },
+      "CIN": {
+        "players": 56,
+        "positions": {
+          "C": 3,
+          "CB": 7,
+          "DE": 5,
+          "DT": 6,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 1,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 3,
+          "S": 4,
+          "TE": 5,
+          "WR": 6
+        },
+        "annual_salary_sum": 161583935,
+        "guarantee_sum": 49157097
+      },
+      "CLE": {
+        "players": 61,
+        "positions": {
+          "C": 3,
+          "CB": 7,
+          "DE": 8,
+          "DT": 3,
+          "K": 1,
+          "MLB": 2,
+          "OG": 3,
+          "OLB": 5,
+          "OT": 4,
+          "P": 1,
+          "QB": 4,
+          "RB": 5,
+          "S": 5,
+          "TE": 4,
+          "WR": 6
+        },
+        "annual_salary_sum": 124467178,
+        "guarantee_sum": 23102999
+      },
+      "DAL": {
+        "players": 63,
+        "positions": {
+          "C": 3,
+          "CB": 7,
+          "DE": 4,
+          "DT": 4,
+          "K": 1,
+          "MLB": 3,
+          "OG": 3,
+          "OLB": 8,
+          "OT": 5,
+          "P": 1,
+          "QB": 2,
+          "RB": 5,
+          "S": 6,
+          "TE": 5,
+          "WR": 6
+        },
+        "annual_salary_sum": 168870579,
+        "guarantee_sum": 51129364
+      },
+      "DEN": {
+        "players": 60,
+        "positions": {
+          "C": 3,
+          "CB": 5,
+          "DE": 5,
+          "DT": 3,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 6,
+          "OT": 5,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 5
+        },
+        "annual_salary_sum": 166820325,
+        "guarantee_sum": 53179627
+      },
+      "DET": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 7,
+          "DT": 3,
+          "K": 1,
+          "MLB": 2,
+          "OG": 5,
+          "OLB": 8,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 4,
+          "S": 7,
+          "TE": 4,
+          "WR": 6
+        },
+        "annual_salary_sum": 171365171,
+        "guarantee_sum": 48634787
+      },
+      "GB": {
+        "players": 64,
+        "positions": {
+          "C": 2,
+          "CB": 5,
+          "DE": 2,
+          "DT": 7,
+          "K": 1,
+          "MLB": 4,
+          "OG": 7,
+          "OLB": 7,
+          "OT": 3,
+          "P": 1,
+          "QB": 2,
+          "RB": 4,
+          "S": 5,
+          "TE": 7,
+          "WR": 7
+        },
+        "annual_salary_sum": 180375320,
+        "guarantee_sum": 38605693
+      },
+      "HOU": {
+        "players": 68,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 10,
+          "DT": 4,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 6,
+          "OT": 6,
+          "P": 1,
+          "QB": 3,
+          "RB": 4,
+          "S": 5,
+          "TE": 5,
+          "WR": 7
+        },
+        "annual_salary_sum": 171458502,
+        "guarantee_sum": 48541446
+      },
+      "IND": {
+        "players": 58,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 7,
+          "DT": 4,
+          "K": 1,
+          "MLB": 3,
+          "OG": 4,
+          "OLB": 3,
+          "OT": 3,
+          "P": 1,
+          "QB": 3,
+          "RB": 3,
+          "S": 4,
+          "TE": 5,
+          "WR": 9
+        },
+        "annual_salary_sum": 165190706,
+        "guarantee_sum": 54809245
+      },
+      "JAX": {
+        "players": 61,
+        "positions": {
+          "C": 3,
+          "CB": 5,
+          "DE": 7,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 4,
+          "OT": 5,
+          "P": 1,
+          "QB": 3,
+          "RB": 4,
+          "S": 5,
+          "TE": 4,
+          "WR": 6
+        },
+        "annual_salary_sum": 159187324,
+        "guarantee_sum": 60812624
+      },
+      "KC": {
+        "players": 63,
+        "positions": {
+          "C": 2,
+          "CB": 5,
+          "DE": 4,
+          "DT": 5,
+          "K": 1,
+          "MLB": 2,
+          "OG": 5,
+          "OLB": 6,
+          "OT": 5,
+          "P": 1,
+          "QB": 4,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 8
+        },
+        "annual_salary_sum": 163101667,
+        "guarantee_sum": 56898280
+      },
+      "LAC": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 5,
+          "DE": 4,
+          "DT": 4,
+          "K": 1,
+          "MLB": 4,
+          "OG": 7,
+          "OLB": 3,
+          "OT": 5,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 6,
+          "TE": 4,
+          "WR": 8
+        },
+        "annual_salary_sum": 159764956,
+        "guarantee_sum": 50337888
+      },
+      "LAR": {
+        "players": 62,
+        "positions": {
+          "C": 3,
+          "CB": 5,
+          "DE": 6,
+          "DT": 6,
+          "K": 1,
+          "MLB": 3,
+          "OG": 4,
+          "OLB": 4,
+          "OT": 4,
+          "P": 1,
+          "QB": 4,
+          "RB": 4,
+          "S": 5,
+          "TE": 5,
+          "WR": 7
+        },
+        "annual_salary_sum": 162183772,
+        "guarantee_sum": 57816178
+      },
+      "LV": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 7,
+          "DE": 4,
+          "DT": 6,
+          "K": 1,
+          "MLB": 4,
+          "OG": 5,
+          "OLB": 3,
+          "OT": 3,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 4,
+          "WR": 9
+        },
+        "annual_salary_sum": 166523098,
+        "guarantee_sum": 53476855
+      },
+      "MIA": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 7,
+          "DE": 4,
+          "DT": 4,
+          "K": 1,
+          "MLB": 3,
+          "OG": 3,
+          "OLB": 8,
+          "OT": 6,
+          "P": 1,
+          "QB": 3,
+          "RB": 4,
+          "S": 5,
+          "TE": 5,
+          "WR": 6
+        },
+        "annual_salary_sum": 132329653,
+        "guarantee_sum": 31068545
+      },
+      "MIN": {
+        "players": 61,
+        "positions": {
+          "C": 3,
+          "CB": 5,
+          "DE": 5,
+          "DT": 2,
+          "K": 1,
+          "MLB": 5,
+          "OG": 4,
+          "OLB": 6,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 6,
+          "TE": 5,
+          "WR": 6
+        },
+        "annual_salary_sum": 151485924,
+        "guarantee_sum": 31260260
+      },
+      "NE": {
+        "players": 63,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 2,
+          "DT": 5,
+          "K": 1,
+          "MLB": 5,
+          "OG": 2,
+          "OLB": 5,
+          "OT": 8,
+          "P": 2,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 7
+        },
+        "annual_salary_sum": 158230494,
+        "guarantee_sum": 61769451
+      },
+      "NO": {
+        "players": 66,
+        "positions": {
+          "C": 1,
+          "CB": 8,
+          "DE": 4,
+          "DT": 7,
+          "K": 1,
+          "MLB": 4,
+          "OG": 6,
+          "OLB": 4,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 8
+        },
+        "annual_salary_sum": 170990976,
+        "guarantee_sum": 49008971
+      },
+      "NYG": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 11,
+          "DE": 1,
+          "DT": 6,
+          "K": 1,
+          "MLB": 5,
+          "OG": 3,
+          "OLB": 4,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 5,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 169439850,
+        "guarantee_sum": 50560100
+      },
+      "NYJ": {
+        "players": 66,
+        "positions": {
+          "C": 2,
+          "CB": 7,
+          "DE": 4,
+          "DT": 6,
+          "K": 1,
+          "MLB": 5,
+          "OG": 4,
+          "OLB": 5,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 7,
+          "S": 5,
+          "TE": 5,
+          "WR": 8
+        },
+        "annual_salary_sum": 152540893,
+        "guarantee_sum": 38836890
+      },
+      "PHI": {
+        "players": 59,
+        "positions": {
+          "C": 3,
+          "CB": 9,
+          "DE": 1,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 3,
+          "OLB": 4,
+          "OT": 4,
+          "P": 1,
+          "QB": 4,
+          "RB": 3,
+          "S": 3,
+          "TE": 5,
+          "WR": 9
+        },
+        "annual_salary_sum": 130637586,
+        "guarantee_sum": 29379771
+      },
+      "PIT": {
+        "players": 60,
+        "positions": {
+          "C": 3,
+          "CB": 9,
+          "DE": 5,
+          "DT": 4,
+          "K": 1,
+          "MLB": 4,
+          "OG": 3,
+          "OLB": 3,
+          "OT": 4,
+          "P": 1,
+          "QB": 4,
+          "RB": 4,
+          "S": 4,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 169736378,
+        "guarantee_sum": 50263574
+      },
+      "SEA": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 5,
+          "DT": 3,
+          "K": 1,
+          "MLB": 5,
+          "OG": 4,
+          "OLB": 3,
+          "OT": 5,
+          "P": 1,
+          "QB": 3,
+          "RB": 8,
+          "S": 5,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 165609005,
+        "guarantee_sum": 54390947
+      },
+      "SF": {
+        "players": 71,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 10,
+          "DT": 6,
+          "K": 1,
+          "MLB": 5,
+          "OG": 5,
+          "OLB": 3,
+          "OT": 5,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 6,
+          "TE": 4,
+          "WR": 9
+        },
+        "annual_salary_sum": 159316695,
+        "guarantee_sum": 60683253
+      },
+      "TB": {
+        "players": 57,
+        "positions": {
+          "C": 2,
+          "CB": 6,
+          "DE": 5,
+          "DT": 4,
+          "K": 1,
+          "MLB": 4,
+          "OG": 4,
+          "OLB": 4,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 3,
+          "S": 6,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 135492828,
+        "guarantee_sum": 41652549
+      },
+      "TEN": {
+        "players": 62,
+        "positions": {
+          "C": 2,
+          "CB": 7,
+          "DE": 6,
+          "DT": 4,
+          "K": 1,
+          "MLB": 2,
+          "OG": 5,
+          "OLB": 8,
+          "OT": 4,
+          "P": 1,
+          "QB": 2,
+          "RB": 5,
+          "S": 5,
+          "TE": 5,
+          "WR": 5
+        },
+        "annual_salary_sum": 170826947,
+        "guarantee_sum": 49173003
+      },
+      "WAS": {
+        "players": 61,
+        "positions": {
+          "C": 1,
+          "CB": 6,
+          "DE": 3,
+          "DT": 5,
+          "K": 1,
+          "MLB": 4,
+          "OG": 5,
+          "OLB": 6,
+          "OT": 4,
+          "P": 1,
+          "QB": 3,
+          "RB": 5,
+          "S": 6,
+          "TE": 4,
+          "WR": 7
+        },
+        "annual_salary_sum": 162513947,
+        "guarantee_sum": 53916759
+      }
+    },
+    "free_agents": 463,
+    "prospects": 278,
+    "limitations": [
+      "Ranges and list shapes are conservative checks inferred from examples, not an official formal schema.",
+      "Salary and guarantee totals are diagnostic; actual cap accounting is not verified.",
+      "Actual displayed overalls, successful import and simulation require in-game testing."
+    ]
+  },
+  "limitations": [
+    "Structural checks and source conventions do not certify successful PGM import or actual displayed ratings.",
+    "Staff potential follows the source target convention, not the player remaining-growth convention.",
+    "Real-world biographies, portraits and development realism require separate source review and in-game checks.",
+    "Fresh save, save/reload and multi-season simulation remain required user tests."
+  ],
+  "added_players": 97,
+  "status": "PASS_FILE_CHECKS_GAME_TEST_PENDING"
+}
