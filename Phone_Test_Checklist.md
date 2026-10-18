@@ -10,3 +10,7 @@ Candidate files are separate: `PGMRoster_2026_Corrected.json` goes in Players; `
 6. Continue through three seasons. Check whether elite-player counts rise sharply league-wide, veterans never decline, or whole teams lose positional depth. Record seasons, player names, starting/ending ages and ratings.
 
 Do not use the old published roster as evidence that this candidate imports. File validation cannot prove import, persistence or simulation behavior.
+
+## Staff development check
+
+Inspect Brian Mason and Davis Webb in the imported staff list. Source career dates are inconsistent with their biographies: Mason first coached at Bluffton in 2009 and entered the NFL in 2023; Webb began NFL coaching in 2023. The imported startSeason values remain 1989 and 2009 because the field’s effect on staff growth is not verified. If the game supports staff export, provide an export after import and after one offseason so the curve indexing can be checked. Until then, use default staff if the custom staff shows implausible development.
