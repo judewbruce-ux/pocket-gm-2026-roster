@@ -8,7 +8,7 @@ Published on October 17, 2026. Both raw files were downloaded and confirmed byte
 
 ## Applied corrections
 
-209 players changed across 587 fields: 417 Madden-based skill corrections, 31 fields restored after two incorrect namesake matches, 15 corroborated ages, 25 portrait skin-tone corrections based on NFL headshots, and 99 development fields across the 97 added players.
+213 players changed across 618 fields: 417 Madden-based skill corrections, 31 fields restored after two incorrect namesake matches, 15 corroborated ages, 25 portrait skin-tone corrections based on NFL headshots, and 99 development fields across the 97 added players.
 
 Ages use September 1, 2026 as a consistent provisional season-start anchor. Madden data is the downloaded Madden 27 launch dataset, not current weekly ratings. The roster transaction snapshot is October 7, not a verified October 17 roster.
 
@@ -28,3 +28,4 @@ Development curves for added players were regenerated after age edits. These are
 Local reproducible builder: `work/audit_2026_10_16/build_corrected.py`.
 Local field-level before/after evidence: `work/audit_2026_10_16/changes.json`.
 
+October 18 draft update: corrected Bryce Underwood’s mobility, passing and portrait, plus mobility/passing estimates for Marcel Reed, Trinidad Chambliss and Demond Williams Jr. See Draft_Class_Correction_Status.md. Full draft-class age and development review remains in progress.

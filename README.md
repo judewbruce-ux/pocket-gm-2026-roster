@@ -5,7 +5,7 @@ Use these separate raw links in Pocket GM 3:
 - Players: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMRoster_2026_Corrected.json
 - Staff: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMStaff_2026_Corrected.json
 
-209 player records and 58 staff ages corrected. Both files pass structural checks; import, save/reload and multi-season simulation are still untested. See Correction_Status.md for remaining verification, and Phone_Test_Checklist.md for testing steps. This remains the October 7 transaction snapshot, not a live roster. The original file remains available below.
+213 player records and 58 staff ages corrected. Both files pass structural checks; import, save/reload and multi-season simulation are still untested. See Correction_Status.md for remaining verification, and Phone_Test_Checklist.md for testing steps. This remains the October 7 transaction snapshot, not a live roster. The original file remains available below.
 
 ---
 
@@ -44,3 +44,5 @@ NFL transactions after October 7 are not included. Practice-squad players are tr
 - PGM import/template reference: https://github.com/PGM21-json/PGM21
 
 Unofficial community adaptation; not endorsed by EA, the NFL, or Pocket GM.
+
+October 18 draft update: corrected Bryce Underwood’s mobility, passing and portrait, plus mobility/passing estimates for Marcel Reed, Trinidad Chambliss and Demond Williams Jr. See Draft_Class_Correction_Status.md. Full draft-class age and development review remains in progress.
