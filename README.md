@@ -1,48 +1,41 @@
-# Corrected import candidate — October 17, 2026
+# Pocket GM 3 — corrected NFL roster
 
-Use these separate raw links in Pocket GM 3:
+October 21, 2026 review candidate. NFL team assignments use the October 7 snapshot.
 
-- Players: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMRoster_2026_Corrected.json
-- Staff: https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMStaff_2026_Corrected.json
+## Import links
 
-213 player records and 58 staff ages corrected. Both files pass structural checks; import, save/reload and multi-season simulation are still untested. See Correction_Status.md for remaining verification, and Phone_Test_Checklist.md for testing steps. This remains the October 7 transaction snapshot, not a live roster. The original file remains available below.
+- [Players](https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMRoster_2026_Corrected.json)
+- [Staff](https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMStaff_2026_Corrected.json)
 
----
+Use each link in its matching import field in a new save. These files contain 2,731 players and 443 staff. They pass local file checks; import, save/reload and multi-season gameplay are not confirmed.
 
-# Pocket GM 3 — 2026 NFL import candidate
+## Changes
 
-Target: Pocket GM 3: Football Sim 1.6.2. Built October 11, 2026 from an October 7, 2026 NFL roster snapshot and Madden 27 launch ratings.
+Compared with our original roster: 473 player records changed, including 266 draft prospects;58 staff ages corrected. The latest draft pass includes 253 EA-based skill profiles,71 portrait corrections and 74 development timing repairs. Counts overlap.
 
-## Import
+NFL skill data uses Madden 27 launch ratings. Draft skill data uses the downloaded official EA College Football Week 6 dataset. Physical attributes map directly; most technical attributes subtract 10 as an estimated college-to-pro adjustment. These are not official Pocket GM ratings. Stored overall ratings are retained; displayed overall and development need game testing.
 
-1. Upload `PGMRoster_2026_Oct07.json` to a public GitHub repository.
-2. Open the file and select **Raw**. Copy that URL (it should serve JSON without requiring sign-in).
-3. In Pocket GM 3, start a **new save**, choose **Import Rosters**, and paste the raw URL.
-4. Start at **Regular Season** to keep current players with their teams. Use the game's default staff.
-5. Check a few teams, simulate a week, then save and reload. Report any import error or obviously incorrect rating.
+## Remaining limits
 
-This candidate passed local structural checks. It has NOT yet been imported or simulated in the game. Do not overwrite a save you want to keep.
+-25 draft prospects lack an unambiguous EA match; their existing estimates remain.
+-177 draft portraits were visually reviewed;101 were unavailable. Exact hairstyles are approximate.
+-33 exact draft-player birthdays were found, but future-prospect age interpretation remains unverified. Placeholder ages have not been represented as correct.
+-Height/weight are unsupported by the player import schema. Separate reference data is provided in Draft_Player_Biography_Reference.json; these measurements are not imported.
+-Staff career dates and development semantics have unresolved issues. See Phone_Test_Checklist.md. Default staff remains an option while testing.
+-The included draft classes are 2027(246 players) and 2028(32 players). No documented maximum number of future imported classes has been confirmed.
+-Contracts are simplified gameplay estimates. Future development, prospect rankings and college-to-pro conversion are estimates. This is not a complete verification of every real-world detail.
 
-## Included
+## Test
 
-- All 32 NFL teams; 2,731 total player records, including free agents and inherited future prospects.
-- 130 team-assignment updates from the October 7 snapshot.
-- 97 missing NFL players added; unsupported long snappers omitted.
-- Madden 27 launch-based rating adjustments for 2,080 existing players. Physical attributes map directly; other existing PGM skills use approximate adjustments. Displayed overalls are recalculated by PGM and may differ.
-- Potential converted to remaining rating growth, following the original PGM template.
-- Simplified contracts for added players and reduced team payrolls where needed to provide cap room. These are gameplay approximations, not real NFL contract figures.
-
-## Limitations
-
-NFL transactions after October 7 are not included. Practice-squad players are treated as free agents. Injured/reserve players remain ordinary roster depth. Added-player appearances and development are template approximations. Unsourced players retain base ratings or documented conservative estimates. Future draft classes are inherited and only lightly normalized; they are not verified scouting projections. Some legacy draft-pick metadata exceeds the old template range and needs an in-game display check. SF has 71 players; the game may require cuts. Some teams have thin DE/OLB depth due to position conventions. Actual salary-cap accounting remains unverified until import.
+Start a new save, check Bryce Underwood’s portrait and running/passing attributes, inspect several other prospects, then save/reload. Simulate an offseason and check young-player growth and veteran decline. Report the full error text if either import fails. Updating this link does not automatically modify an existing save.
 
 ## Sources and credit
 
-- Base roster: https://github.com/trbletrble1/pocketgm-rosters — adapted, not created from scratch.
-- NFL roster snapshot: https://github.com/nflverse/nflverse-data/releases/tag/rosters — roster_2026.csv, asset updated October 7, 2026.
-- Madden data: https://github.com/zachxwalton/madden-ratings-breakdown — Madden 27 Launch Ratings, originally sourced from EA.
-- PGM import/template reference: https://github.com/PGM21-json/PGM21
+- Base player/staff roster: https://github.com/trbletrble 1/pocketgm-rosters
+- NFL roster snapshot: https://github.com/nflverse/nflverse-data/releases/tag/rosters
+- Madden dataset: https://github.com/zachxwalton/madden-ratings-breakdown
+- College skills: https://www.ea.com/games/ea-sports-college-football/ratings
+- Player biographies/headshots: official college/team websites, with per-player source records saved in the audit.
+- Staff birthdays: official 2025 NFL Record and Fact Book.
 
-Unofficial community adaptation; not endorsed by EA, the NFL, or Pocket GM.
-
-October 18 draft update: corrected Bryce Underwood’s mobility, passing and portrait, plus mobility/passing estimates for Marcel Reed, Trinidad Chambliss and Demond Williams Jr. See Draft_Class_Correction_Status.md. Full draft-class age and development review remains in progress.
+Original PGMRoster_2026_Oct07.json remains available. See corrected_validation_report.json and Full_Review_Progress.json for current file-check results and coverage.

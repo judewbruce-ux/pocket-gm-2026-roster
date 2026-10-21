@@ -1,0 +1,16 @@
+{
+  "changed_players": 473,
+  "changed_draft_players": 266,
+  "net_changed_fields": 4071,
+  "staff_age_corrections": 58,
+  "draft_skills_matched": 253,
+  "draft_skills_unresolved": 25,
+  "draft_photos_reviewed": 177,
+  "draft_photos_unavailable": 101,
+  "draft_portraits_corrected": 71,
+  "draft_growth_schedules_corrected": 74,
+  "exact_prospect_birth_dates_found": 33,
+  "prospect_age_import_semantics": "awaiting game confirmation",
+  "not_yet_published": false,
+  "publication_note": "Prepared for publication; see publication verification for confirmed remote hashes."
+}

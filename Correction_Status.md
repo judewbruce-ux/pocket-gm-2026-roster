@@ -1,31 +1,41 @@
-# Correction candidate — October 17, 2026
+# Pocket GM 3 — corrected NFL roster
 
-Published on October 17, 2026. Both raw files were downloaded and confirmed byte-for-byte identical to the validated local candidates. Pocket GM 3 import and simulation remain untested.
+October 21, 2026 review candidate. NFL team assignments use the October 7 snapshot.
 
-- Player import: `PGMRoster_2026_Corrected.json` (2,731 players).
-- Staff import: `PGMStaff_2026_Corrected.json` (443 staff; 58 ages corrected from explicit birth dates in the official 2025 NFL fact book).
-- Keep player and staff imports separate. A player file in the staff import field produces the missing `role` error.
+## Import links
 
-## Applied corrections
+- [Players](https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMRoster_2026_Corrected.json)
+- [Staff](https://raw.githubusercontent.com/judewbruce-ux/pocket-gm-2026-roster/main/PGMStaff_2026_Corrected.json)
 
-213 players changed across 618 fields: 417 Madden-based skill corrections, 31 fields restored after two incorrect namesake matches, 15 corroborated ages, 25 portrait skin-tone corrections based on NFL headshots, and 99 development fields across the 97 added players.
+Use each link in its matching import field in a new save. These files contain 2,731 players and 443 staff. They pass local file checks; import, save/reload and multi-season gameplay are not confirmed.
 
-Ages use September 1, 2026 as a consistent provisional season-start anchor. Madden data is the downloaded Madden 27 launch dataset, not current weekly ratings. The roster transaction snapshot is October 7, not a verified October 17 roster.
+## Changes
 
-Development curves for added players were regenerated after age edits. These are estimates derived from the official template's positional retirement profiles. Simulation outcomes and overall-rating recalculation need an in-game check. Staff uses different potential semantics; its skills, potential and growth curves have been preserved pending further verification. The official fact book verified 113 staff birth dates and supported 58 age corrections; 330 staff remain unmatched.
+Compared with our original roster: 473 player records changed, including 266 draft prospects;58 staff ages corrected. The latest draft pass includes 253 EA-based skill profiles,71 portrait corrections and 74 development timing repairs. Counts overlap.
 
-95 added-player headshots were reviewed; ambiguous differences were left alone. Appearance edits concern visible skin tone, not racial identity. The rest of the league has not received a complete individual photo audit. Exact portrait rendering needs an in-game check.
+NFL skill data uses Madden 27 launch ratings. Draft skill data uses the downloaded official EA College Football Week 6 dataset. Physical attributes map directly; most technical attributes subtract 10 as an estimated college-to-pro adjustment. These are not official Pocket GM ratings. Stored overall ratings are retained; displayed overall and development need game testing.
 
-## Remaining work
+## Remaining limits
 
-- Resolve 121 held age proposals; conflicting sources are recorded in `work/audit_2026_10_16/held_age_changes.json`.
-- Verify the remaining unmatched staff ages and investigate staff development behavior. Todd Monken was corrected from 51 to 60 using his February 5, 1966 birth date.
-- Complete remaining identity/appearance verification. Two added players lack available headshots.
-- Height and weight are not supported fields in the current player import schema. The local sidecar Player_Measurements_Reference.json preserves 2,355 source-listed measurements separately; these are not individually verified or imported.
-- Test both published imports in Pocket GM 3. Structural validation passed with zero errors.
-- Simulate seasons to check rookie growth, veteran decline, and unexpectedly inflated overalls.
+-25 draft prospects lack an unambiguous EA match; their existing estimates remain.
+-177 draft portraits were visually reviewed;101 were unavailable. Exact hairstyles are approximate.
+-33 exact draft-player birthdays were found, but future-prospect age interpretation remains unverified. Placeholder ages have not been represented as correct.
+-Height/weight are unsupported by the player import schema. Separate reference data is provided in Draft_Player_Biography_Reference.json; these measurements are not imported.
+-Staff career dates and development semantics have unresolved issues. See Phone_Test_Checklist.md. Default staff remains an option while testing.
+-The included draft classes are 2027(246 players) and 2028(32 players). No documented maximum number of future imported classes has been confirmed.
+-Contracts are simplified gameplay estimates. Future development, prospect rankings and college-to-pro conversion are estimates. This is not a complete verification of every real-world detail.
 
-Local reproducible builder: `work/audit_2026_10_16/build_corrected.py`.
-Local field-level before/after evidence: `work/audit_2026_10_16/changes.json`.
+## Test
 
-October 18 draft update: corrected Bryce Underwood’s mobility, passing and portrait, plus mobility/passing estimates for Marcel Reed, Trinidad Chambliss and Demond Williams Jr. See Draft_Class_Correction_Status.md. Full draft-class age and development review remains in progress.
+Start a new save, check Bryce Underwood’s portrait and running/passing attributes, inspect several other prospects, then save/reload. Simulate an offseason and check young-player growth and veteran decline. Report the full error text if either import fails. Updating this link does not automatically modify an existing save.
+
+## Sources and credit
+
+- Base player/staff roster: https://github.com/trbletrble 1/pocketgm-rosters
+- NFL roster snapshot: https://github.com/nflverse/nflverse-data/releases/tag/rosters
+- Madden dataset: https://github.com/zachxwalton/madden-ratings-breakdown
+- College skills: https://www.ea.com/games/ea-sports-college-football/ratings
+- Player biographies/headshots: official college/team websites, with per-player source records saved in the audit.
+- Staff birthdays: official 2025 NFL Record and Fact Book.
+
+Original PGMRoster_2026_Oct07.json remains available. See corrected_validation_report.json and Full_Review_Progress.json for current file-check results and coverage.
